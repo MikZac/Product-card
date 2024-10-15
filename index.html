@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Product Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="top-bar">
+                <p><a href="#">Znajdź sklep</a></p>
+                <p><a href="#">Pomoc</a></p>
+                <p><a class="login" href="#">Zaloguj się</a></p>
+                <div class="user-icon">
+                    <svg aria-hidden="true" class="icon-btn" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none" aria-label="Profile"><path stroke="currentColor" stroke-width="2" d="M3.75 21v-3a3.75 3.75 0 013.75-3.75h9A3.75 3.75 0 0120.25 18v3m-4.5-13.5a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+                </div>
+            </div>
+            <div class="navigation-bar navigation-desktop">
+                <div class="navigation-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="swoosh-svg" width="64" height="22" viewBox="0 0 64 22" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.7277 12.1511C15.999 12.598 14.4241 12.8196 13.0469 12.8196C11.3396 12.8196 9.94617 12.4728 8.97074 11.7793C4.02962 8.28845 8.54956 0.885548 9.06118 0.0629324C6.88551 2.37923 4.65235 4.80341 2.89851 7.44593C-0.0575023 11.9597 -0.812655 16.2475 0.910825 18.906C2.23896 20.9642 4.40042 22 7.37517 22C10.0146 22 13.2975 21.1832 17.1928 19.5559L64 0.0173385L63.9981 0L17.7277 12.1511Z" fill="#111111"/></svg>
+                </div>
+                <div class="navigation">
+                    <p><a class="navigation__link" href="#">Nowe i polecane</a></p>
+                    <p><a class="navigation__link" href="#">Mężczyźni</a></p>
+                    <p><a class="navigation__link" href="#">Kobiety</a></p>
+                    <p><a class="navigation__link" href="#">Dzieci</a></p>
+                    <p><a class="navigation__link" href="#">Wyprzedaże</a></p>
+                </div>
+                <div class="nav-elements">
+                    <div class="search">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"/></svg>
+                        <input type="text" placeholder="Wyszukaj"/>
+                    </div>
+                    <div class="search-mobile">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"/></svg>
+                    </div>
+                    <div class="favourites">
+                        <a href="#">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"/></svg>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"/></svg>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-bar navigation-mobile">
+                <div class="navigation-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="swoosh-svg" width="64" height="22" viewBox="0 0 64 22" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.7277 12.1511C15.999 12.598 14.4241 12.8196 13.0469 12.8196C11.3396 12.8196 9.94617 12.4728 8.97074 11.7793C4.02962 8.28845 8.54956 0.885548 9.06118 0.0629324C6.88551 2.37923 4.65235 4.80341 2.89851 7.44593C-0.0575023 11.9597 -0.812655 16.2475 0.910825 18.906C2.23896 20.9642 4.40042 22 7.37517 22C10.0146 22 13.2975 21.1832 17.1928 19.5559L64 0.0173385L63.9981 0L17.7277 12.1511Z" fill="#111111"/></svg>
+                </div>
+                <div class="nav-elements">
+                    <div class="search">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"/></svg>
+                        <input type="text" placeholder="Wyszukaj"/>
+                    </div>
+                    <div class="search-mobile">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"/></svg>
+                    </div>
+                    <div class="favourites">
+                        <a href="#">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"/></svg>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"/></svg>
+                        </a> 
+                    </div>
+                    <div class="burger-menu">
+                        <a href="#">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M21 5.25H3M21 12H3m18 6.75H3"/></svg>                        </a> 
+                    </div>
+                </div>
+                <div class="menu-mobile">
+                <div class="close-mobile-menu">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"/></svg>
+                </div>   
+                    <ul>
+                    <li><a class="navigation__link" href="#">Nowe i polecane</a></li>
+                    <li><a class="navigation__link" href="#">Mężczyźni</a></li>
+                    <li><a class="navigation__link" href="#">Kobiety</a></li>
+                    <li><a class="navigation__link" href="#">Dzieci</a></li>
+                    <li><a class="navigation__link" href="#">Wyprzedaże</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <div class="header-slider">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p><span><strong>Rabat do 50%</strong></span>Trwa wyprzedaż na koniec sezonu. Przeglądaj</p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><span><strong>Przeglądaj wszystkie nowości </strong></span>Przeglądaj</p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><span><strong>Bezpłatna dostawa i zwrot</strong></span> Społeczność Nike: bezpłatna dostawa i 30 dni na bezpłatny zwrot. Dowiedz się więcej Dołącz do nas</p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="000"><path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"/></svg></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="000"><path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"/></svg></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        
+    </header>
+    <main>
+        <section class="product-card">
+            <div class="container">
+                <div class="row">
+                    <div class=" product-card-flex d-flex flex-column flex-md-row">
+                        <div class="product-gallery d-flex flex-column-reverse flex-md-row">
+                                <div class="photo-product-list d-flex flex-row flex-md-column">
+                                    <div id="product-photo-1" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-1.png" alt="air-jordan-1"/>
+                                    </div>
+                                    <div id="product-photo-2" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-2.png" alt="air-jordan-2"/>
+                                    </div>
+                                    <div id="product-photo-3" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-3.jpeg" alt="air-jordan-3"/>
+                                    </div>
+                                    <div id="product-photo-4" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-4.jpeg" alt="air-jordan-4"/>
+                                    </div>
+                                    <div id="product-photo-5" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-5.png" alt="air-jordan-5"/>
+                                    </div>
+                                    <div id="product-photo-6" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-6.png" alt="air-jordan-6"/>
+                                    </div>
+                                    <div id="product-photo-7" class="product-photo-thumbnail">
+                                        <img src="/assets/gallery/air-jordan-7.png" alt="air-jordan-7"/>
+                                    </div>
+                                </div>
+                                <div class="main-product-photo">
+                                    <div class="product-rating">Wysoko oceniane</div>
+                                    <div class="main-photo-slide d-flex">
+                                        <div class="main-photo-slide-arrow-previous">
+                                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"/></svg>
+                                        </div>
+                                        <div class="main-photo-slide-arrow-next">
+                                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product-desc">
+                            <h1 class="product-title">Air Jordan 1 Low</h1>
+                            <p class="product-category">Buty męskie</p>
+                            <span class="product-price">629,99 zł</span>
+                            <div class="product-short-description">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                            <div class="product-size-table">
+                                <span class="product-size-table-headline">Wybierz rozmiar</span>
+                                <div class="size-chart">
+                                    <div class="product-size">
+                                        <span>EU 40</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 40.5</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 41</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 41.5</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 42</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 43</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 43.5</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 44</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 44.5</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 45</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 45.5</span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span>EU 46</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="btn-add-to-cart">Dodaj do koszyka</button>
+
+                            </div>
+                            <div class="wishlist">
+                                <button class="btn-wishlist">Ulubione <span><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"/></svg></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-section">
+                        <h2>Oceny</h2>
+                        <div id="carouselTestimonial" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="testimionial">
+                                    <span class="testimonial-nick">Alex Nike</span>
+                                    <div class="testimonial-text"><p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled</p></div>
+                                    <div class="testimonial-raiting d-flex">
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="testimionial">
+                                    <span class="testimonial-nick">Test Nike</span>
+                                    <div class="testimonial-text"><p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled</p></div>
+                                    <div class="testimonial-raiting d-flex">
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="testimionial">
+                                    <span class="testimonial-nick">Jacob Chopa</span>
+                                    <div class="testimonial-text"><p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled</p></div>
+                                    <div class="testimonial-raiting d-flex">
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" fill="none"><path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M2.56 10.346l5.12 3.694-1.955 5.978c-.225.688.568 1.261 1.157.836L12 17.159l5.12 3.695c.587.425 1.381-.148 1.155-.836l-1.954-5.978 5.118-3.694c.589-.425.286-1.352-.442-1.352H14.67l-.166-.507-1.789-5.47c-.225-.69-1.205-.69-1.43 0L9.33 8.993H3.003c-.728 0-1.03.927-.442 1.352z" clip-rule="evenodd"/></svg>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="000"><path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"/></svg></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="000"><path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"/></svg></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
